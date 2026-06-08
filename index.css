@@ -1,0 +1,40 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --jarvis-bg: #030d1a;
+  --jarvis-panel: #061525;
+  --jarvis-border: rgba(0, 180, 255, 0.25);
+  --jarvis-border-strong: rgba(0, 180, 255, 0.5);
+  --jarvis-accent: #00b4ff;
+  --jarvis-accent-dim: rgba(0, 180, 255, 0.15);
+  --jarvis-text: #c8e8f8;
+  --jarvis-muted: #4a7a9a;
+  --jarvis-success: #00ff88;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+body {
+  background: var(--jarvis-bg);
+  font-family: 'Share Tech Mono', monospace;
+  color: var(--jarvis-text);
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--jarvis-border);
+  border-radius: 2px;
+}
